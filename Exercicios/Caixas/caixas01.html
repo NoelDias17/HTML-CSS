@@ -1,0 +1,71 @@
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        /* height é altura
+        width é largura 
+        weight é peso */
+
+        h1 {
+            /* box level */
+            display: inline;
+
+            font-family: Arial, Helvetica, sans-serif;
+        
+            background-color: grey;
+
+            /* box size */
+            height: 300px;
+            width: 300px;
+
+            /* se as 4 linhas de padding forem iguais basta usar a linha abaixo para substituir as outras 4 */
+            padding: 10px;
+
+            /* a linha border substitui as 3 linhas, mas a ordem deverá ser mantida */
+            border: 10px solid black ;
+
+            /* para centralizar a caixa use margin auto */
+            margin: auto;
+
+            margin: 20px auto 40px auto;
+
+            outline: 5px dashed salmon;
+
+        }
+
+        a {
+            /* inline level */
+
+            display: block;
+
+            border-width: 3px;
+            border-style: groove;
+            border-color: rgb(214, 117, 117);
+
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+
+        }
+
+        p {
+            display: inline-block;
+            padding: 50px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box level</h1>
+    <p>paragrafos tambem sao exemplos de box level <a href="#">mas os links sao exemplos de caixas in line level</a> vamos <strong>ver</strong> como tudo isso funciona</p>
+
+    <!-- user agent é a configuração que o navegador cria por padrao -->
+
+</body>
+</html>
